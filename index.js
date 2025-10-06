@@ -3,11 +3,6 @@ const express = require('express');
 const app = express();
 const Note = require('./models/note');
 
-if (process.argv.length < 3) {
-  console.log('give password as argument');
-  process.exit(1);
-}
-
 let notes = [
   {
     id: '1',
